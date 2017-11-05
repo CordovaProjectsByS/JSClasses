@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <main>
+            <article>
+                <h3>Oblicz obwód i pole kwadratu: </h3>
+                <label><p>Długość boku:</p></label>
+                <input type="text" id="square_a"/>
+                <button id="square_button">Oblicz</button>
+            </article>  
+            <article>
+                <h3>Oblicz obwód i pole koła: </h3>
+                <label><p>Długość promienia:</p></label>
+                <input type="text" id="circle_r"/>
+                <button id="circle_button">Oblicz</button>
+            </article>
+            <article>
+                <h3>Kształty </h3>
+                <label><input type="radio" name="direction_type" value="normal_direction" checked/><span>Normalny kierunek</span></label>
+                <label><input type="radio" name="direction_type" value="inverted_direction"/><span>Odwrócony kierunek</span></label>
+                <br/>
+                <label><input type="radio" name="figure_type" value="full-rectangle" checked/><span>Pełny prostokąt</span></label>
+                <label><input type="radio" name="figure_type" value="full-empty-rectangle"/><span>Wyjedzony prostokąt</span></label>
+                <label><input type="radio" name="figure_type" value="triangle"/><span>Trójkąt</span></label>
+                <br/>
+                <div><label><span>Pierwszy rozmiar</span><input type="text" id="first_size"/></label></div>
+                <div><label><span>Drugi rozmiar</span><input type="text" id="second_size"/></label></div>
+                <div><label><span>Ilość znaków</span><input type="text" id="amount_characters"/></label></div>
+                
+                <button id="generate-interface-button">Generuj Kształt</button>
+            </article>
+            <article>
+                <h3>Result: </h3>
+                <div id="result">
+                </div>
+            </article>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
